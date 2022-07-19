@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin-top: 150px;
+
+}
+
+.header {
+    width: 100vw;
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background: url("../assets/Untitled.png");    
+    background-size:100vw;
+    background-position: center;
+    padding: 1.5rem;
+    border-radius: 0 0 15px 15px;
+    box-shadow: #3b3b3b 3px 3px 5px;
+
+}
+
+.nav__foto{
+    
+    width: 6rem;
+    height: 6rem;
+    background: url("../assets/IMG_20220713_143637563.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    transition: all .7s;
+}
+.nav__foto-filtro {
+    background-color: #fa8f1d2c;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.nav__foto:hover{
+    transform: rotate(360deg);
+}
+
+.logoArgPrograma {
+    background:black;
+    width: 6.5rem;
+    height: 3.5rem;
+    border-radius: 15px;
+    transition: all .5s;
+}
+
+.logoArgPrograma:hover {
+    background: rgba(0, 0, 0, 0.722);
+    transform: scale(1.3);
+
+}
+
+.burguerBoton {
+    width: 3.5rem;
+    height: 7vh;
+    transition: all .5s;
+}
+
+.burguerBoton:hover{
+    transform: scale(1.3);
+}
+
+
+/* clase principal */

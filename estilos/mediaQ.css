@@ -1,0 +1,19 @@
+/* laptop */
+@media screen and (min-width:1040px) {
+  
+   
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    
+}
+
+/* movil */
+@media screen and (max-width:768px){
+    .header {
+        height: 18vh;
+        background-size:100vw;
+    }
+    
+}
