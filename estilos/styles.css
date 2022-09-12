@@ -7,6 +7,7 @@ body{
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+gap: 1rem;
 }
 
 .header {
@@ -84,6 +85,24 @@ top: 0;
     height: 350px;
     
 } */
+
+.mainmain{
+    width: 100%;
+    position: fixed;
+    top:5rem;
+}
+
+.mainmain--banner{
+    width: 100vw;
+    height: 100vh;
+    opacity: .6;
+}
+.mat-card{
+    width: 90vw;
+    border-radius: 15px;
+    animation: aparecer 5s ease-in-out;
+    transition: all 4s;
+}
 #first-card{
     margin-top: 8rem;
 }
@@ -103,8 +122,39 @@ top: 0;
     animation: picMov infinite 3s;
 }
 
+.btn-edit{
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .logo-alura{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo-alura img:first-child{
+    border-right: solid #3b3b3b6c 1px;
+    padding: 0  1rem;
+    width: 110px;
+  }
+
+  #edit-acercade{
+    display: none;
+  }
+  
 @keyframes picMov {
  0%{transform: scale(1);}
  50%{transform: scale(1.06);}
  100%{transform: scale(1);}   
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

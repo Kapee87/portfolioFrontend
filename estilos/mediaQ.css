@@ -1,9 +1,27 @@
 /* laptop */
 @media screen and (min-width:1040px) {
   .flex-center-content{
-    display:initial;
+    display:inline;
   }
-   
+  #info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  #info-img img{
+    width: 18vw;
+    height: 45vh;
+    opacity: .9799;
+    filter: drop-shadow(5px -3px 20px rgba(142, 28, 229, 0.463));
+  }
+  .mat-card{
+    margin: .5rem auto;
+    width: 80vw; 
+    padding: 2rem;
+  }
+ 
 }
 
 
@@ -21,5 +39,10 @@
         display: flex;
         justify-content: center;
         padding: 1rem;
+    }
+    .mat-card{
+      padding: 3rem;
+      animation-duration: 1s;
+      transition: all 2s;
     }
 }
